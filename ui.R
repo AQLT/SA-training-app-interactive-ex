@@ -1,7 +1,14 @@
-suppressWarnings(suppressPackageStartupMessages(library(shiny, quietly = TRUE)))
+if(!requireNamespace("ggplot2",quietly = TRUE))
+    install.packages("ggplot2", dependencies = TRUE)
+if(!requireNamespace("dygraphs",quietly = TRUE))
+    install.packages("dygraphs", dependencies = TRUE)
+if(!requireNamespace("highcharter",quietly = TRUE))
+    install.packages("highcharter", dependencies = TRUE)
+if(!requireNamespace("rJava",quietly = TRUE))
+    install.packages("rJava")
+
 suppressWarnings(suppressPackageStartupMessages(library(ggplot2, quietly = TRUE)))
 suppressWarnings(suppressPackageStartupMessages(library(dygraphs, quietly = TRUE)))
-suppressWarnings(suppressPackageStartupMessages(library(highcharter, quietly = TRUE)))
 suppressWarnings(suppressPackageStartupMessages(library(highcharter, quietly = TRUE)))
 suppressWarnings(suppressPackageStartupMessages(library(rJava, quietly = TRUE)))
 
